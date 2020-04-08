@@ -4,10 +4,6 @@
     <list default="true" id="dd72ddb9-abcf-498e-9b6c-f2b5e1367478" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/mainstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/mainstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browse.html" beforeDir="false" afterPath="$PROJECT_DIR$/browse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycollection.html" beforeDir="false" afterPath="$PROJECT_DIR$/mycollection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selfupload.html" beforeDir="false" afterPath="$PROJECT_DIR$/selfupload.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <workItem from="1586337707812" duration="2598000" />
       <workItem from="1586340441142" duration="47000" />
       <workItem from="1586340491991" duration="209000" />
-      <workItem from="1586341402784" duration="3550000" />
+      <workItem from="1586341402784" duration="4218000" />
     </task>
     <servers />
   </component>
