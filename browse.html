@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<style>
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 0px;
+        background-color: darkgoldenrod;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    ul.imglist{ margin:0 0 0 0; overflow:hidden}
+    ul.imglist li.inline{ float: left; padding:10px 10px; height:240px}
+    ul.imglist li img{ display:block; height: 95%; }
+
+    li.inline{
+        z-index: initial;
+        list-style: none;
+    }
+
+    #aside{width:200px; float:left; background:lightgray;}
+
+    #content{width:780px; float:right; background:ghostwhite;}
+
+    #footcontent{clear: both}
+
+    #currentpage{
+        text-decoration: overline;
+    }
+
+    select.choose{
+        width: 80px;
+        height: 25px;
+        font-size: 14px;
+        margin: 5px 5px 5px 5px;
+        z-index: 100;
+    }
+
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览页</title>
+    <link rel="stylesheet" type="text/css" href="./Style/mainstyle.css">
+</head>
+<body class="mainbody">
+<header>
+    <nav class="topframe" >
+        <h1 id="navigat">
+            旅图LiveTour
+            <a href="index.html"> 首页 </a>
+            <a id="currentpage" href="browse.html"> 浏览页 </a>
+            <a href="search.html"> 搜索页 </a>
+
+        </h1>
+        <div class="dropdown">
+                <span class="user">
+                用户中心
+                </span>
+            <div class="dropdown-content">
+                <a href="login.html">登录</a><br>
+                <a href="mypics.html">我的照片</a><br>
+                <a href="mycollection.html">我的收藏</a><br>
+                <a href="selfupload.html">上传</a>
+            </div>
+        </div>
+    </nav>
+</header><br>
+
+<form id="aside">
+    <p><input id="title">
+        <button onclick="alert('图片已刷新')">搜索</button></p>
+    <p>
+        <ul> 热门国家浏览
+    <li>意大利</li>
+    <li>法国</li>
+        </ul>
+    </p>
+    <p>
+    <ul> 热门城市浏览
+        <li>梵蒂冈</li>
+        <li>巴黎</li>
+    </ul>
+    </p>
+
+</form>
+<form id="content">
+    <p>
+        <span>国家</span>
+        <select name="country" class="choose">
+            <option value="Italy">意大利</option>
+            <option value="France">法国</option>
+        </select>
+        <span>城市</span>
+        <select name="country" class="choose">
+            <option value="Rome" selected="selected">罗马</option>
+            <option value="Gilongpo">吉隆坡</option>
+        </select>
+        <span>主题</span>
+        <select name="country" class="choose">
+            <option value="street" selected="selected">街市</option>
+            <option value="moutain">山水</option>
+        </select>
+        <button onclick="alert('图片已刷新')">确定</button>
+
+    <ul class="imglist">
+        <li class="inline">
+            <img src="./travel-images/normal/medium/222222.jpg">
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/222223.jpg" >
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/5855174537.jpg">
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/5855191275.jpg">
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/5855209453.jpg">
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/5855221959.jpg">
+        </li>
+        <li class="inline">
+            <img src="./travel-images/normal/medium/5855213165.jpg">
+        </li>
+    </ul>
+    </p>
+
+</form>
+
+<table id ="pages">
+    <tr><td>&lt;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>…</td><td>&gt;</td></tr>
+</table>
+
+</body>
+
+<footer id="footcontent">
+    <table>
+        <tr><th>联系我们</th><th>关于我们</th><th>法律相关</th></tr><br>
+        <tr><td>公司地址</td><td>开发人员</td><td></td></tr>
+        <tr><td>联系电话</td><td>加入我们</td><td></td></tr>
+    </table><br>
+    <div>&copy2017 livetour.com | 沪ICP备16307130207号-1 |  京公网安备 800820820号 | 营业执照 </div>
+</footer>
+</html>
